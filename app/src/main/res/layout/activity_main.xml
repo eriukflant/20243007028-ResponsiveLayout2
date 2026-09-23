@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Practical 1 - Part 1
-    Vertical weights are 1:1:1:2:1, so row 4 is twice the height of rows 1, 2, 3 and 5.
-    The four views in row 3 each carry weight 1, so they always split the width evenly.
--->
+<!-- Portrait layout. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- Row 1 -->
+    <!-- Title -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -23,7 +19,7 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
-    <!-- Row 2 -->
+    <!-- Subtitle -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -34,7 +30,7 @@
         android:textColor="#000000"
         android:textSize="20sp" />
 
-    <!-- Row 3: four equal columns -->
+    <!-- Four equal cells -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -82,7 +78,7 @@
             android:textSize="20sp" />
     </LinearLayout>
 
-    <!-- Row 4: weight 2, twice the height of the other rows -->
+    <!-- Main label -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -93,7 +89,7 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
-    <!-- Row 5: two buttons, each weight 1 so they stay the same width -->
+    <!-- Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
